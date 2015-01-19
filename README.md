@@ -1,4 +1,4 @@
 RabinCryptoSystem
 =================
 
-Implementation of Rabin Cryptosystem in C++ .
+Implementation of Rabin crypto system in C++ .
