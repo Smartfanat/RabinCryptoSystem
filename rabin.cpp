@@ -31,7 +31,7 @@ void decode(vector<int> s)
     copy(l.begin(), l.end(), ostream_iterator<char>(cout, ""));
 }
 
-int encrypt(int m, int p, int q)
+int encrypt(int m, int n)
 {
     int c = (m * m)%n;
     return c;
@@ -115,7 +115,7 @@ int main()
     vector<int>l;
     for(int i = 0; i <= len; i++)
     {
-        l.push_back(encrypt(test[i], p, q));
+        l.push_back(encrypt(test[i], n));
     }
     cout << "Encryption: ";
     copy(l.begin(), l.end(), ostream_iterator<int>(cout, ""));
